@@ -4,7 +4,7 @@ export class AgendaVet implements INodeType {
 	description: INodeTypeDescription = {
 		displayName: 'Agenda Vet',
 		name: 'agendaVet',
-		icon: 'file:agendavet.png',
+		icon: 'file:agendavet.svg',
 		group: ['transform'],
 		version: 1,
 		subtitle: '={{$parameter["operation"] + " (" + $parameter["resource"] + ")"}}',
