@@ -1,0 +1,54 @@
+{
+  "name": "n8n-nodes-agendavet",
+  "version": "0.1.0",
+  "description": "Nodes e tools do Agenda Vet para o n8n: agenda veterinária (doutores, horários livres, agendamentos) e envio de mensagens no WhatsApp da clínica, prontos para agentes de IA.",
+  "keywords": [
+    "n8n-community-node-package",
+    "n8n",
+    "agendavet",
+    "veterinario",
+    "veterinaria",
+    "whatsapp",
+    "agenda",
+    "clinica"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/BTWData/n8n-nodes-agendavet",
+  "author": {
+    "name": "BTW Data"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BTWData/n8n-nodes-agendavet.git"
+  },
+  "engines": {
+    "node": ">=18.10"
+  },
+  "main": "index.js",
+  "scripts": {
+    "build": "tsc && gulp build:icons",
+    "dev": "tsc --watch",
+    "prepublishOnly": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/credentials/AgendaVetApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/nodes/AgendaVet/AgendaVet.node.js"
+    ]
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.0",
+    "gulp": "^5.0.0",
+    "n8n-workflow": "^1.60.0",
+    "typescript": "^5.5.4"
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  }
+}
