@@ -1,6 +1,6 @@
 {
   "name": "n8n-nodes-agendavet",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "Nodes e tools do Agenda Vet para o n8n: agenda veterinária (doutores, horários livres, agendamentos) e envio de mensagens no WhatsApp da clínica, prontos para agentes de IA.",
   "keywords": [
     "n8n-community-node-package",
